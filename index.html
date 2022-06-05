@@ -3,6 +3,7 @@
 <head>
   <title>Favourite things</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
 </head>
@@ -22,21 +23,31 @@
     </div>
     <div class="form-group">
       <h4>What's your most favourtie beverage?</h4>
-      <label for="name"></label>
-      <input id="name" type="text">
+      <label for="favBeverage"></label>
+      <input id="favBeverage" type="text">
     </div>
     <div class="form-group">
       <h4>What's your most favourtie movie?</h4>
-      <label for="name"></label>
-      <input id="name" type="text">
+      <label for="favMovie"></label>
+      <input id="favMovie" type="text">
     </div>
     <div class="form-group">
       <h4>What's your most favourtie book?</h4>
-      <label for="name"></label>
-      <input id="name" type="text">
+      <label for="favBook"></label>
+      <input id="favBook" type="text">
     </div>
 
     <button type="submit" class="btn">Submit</button>
   </form>
+
+  <div id="result">
+    <p><span id="nameInput"></span>, your favourite things are: <span id=favThings></span></p>
+    <ul>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+    </ul>
+  </div>
 </body>
 </html>
