@@ -7,10 +7,12 @@ $(document).ready(function() {
     const favMovie = $("input#favMovie").val();
     const favBook = $("input#favBook").val();
     
-    const favThings = [favFood, favBeverage, favMovie, favBook];
-    const favThingsOne = favThings.join()
+    const arrayOfFavThings = [favFood, favBeverage, favMovie, favBook];
     $("#result").show();
     $("#nameInput").text(nameInput);
-    $("#favThings").text(favThingsOne);
+        
+    arrayOfFavThings.forEach(function(thing) {
+    $("#favThings").append("<li>" + thing + "</li>");
+});
   });
 });
