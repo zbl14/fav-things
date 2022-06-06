@@ -8,11 +8,17 @@ $(document).ready(function() {
     const favBook = $("input#favBook").val();
     
     const arrayOfFavThings = [favFood, favBeverage, favMovie, favBook];
+    arrayOfFavThings.push("coffee");
+    console.log(arrayOfFavThings);
     $("#result").show();
     $("#nameInput").text(nameInput);
+    $("#nameInput1").text(arrayOfFavThings[0]);
+    $("#nameInput2").text(arrayOfFavThings[1]);
+    $("#nameInput3").text(arrayOfFavThings[2]);
+    $("#nameInput4").text(arrayOfFavThings[3]);
         
-    arrayOfFavThings.forEach(function(thing) {
-    $("#favThings").append("<li>" + thing + "</li>");
-});
+    //   arrayOfFavThings.forEach(function(thing) {
+    //   $("#favThings").append("<li>" + thing + "</li>");
+    // });
   });
 });
